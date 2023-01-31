@@ -1,3 +1,2 @@
-Este é um exercício de desafio proposto pelo curso de JavaScript da B7Web: Validação de formulário com código
-introdutório em HTML-CSS.
-#############################################################################################################
+Este é um exercício de desafio proposto pela plataforma B7Web: Validação de formulário com códigos 
+em HTML-CSS e JavaScript.
