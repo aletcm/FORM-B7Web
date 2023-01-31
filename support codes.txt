@@ -1,0 +1,69 @@
+input:invalid, textarea:invalid {
+    border-left: 2px solid #ffa600;
+}
+
+
+
+pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$)"
+
+
+
+input:-webkit-autofill  {
+    -webkit-box-shadow: 0 0 0 1000px #dddddd inset ;
+}
+
+
+
+document.addEventListener('input', function(event) {
+    let object1 = document.getElementById('name')
+    let inside = event.target
+
+    console.log(inside.value)
+    // console.log(event.target)
+
+    if(inside.value != "") {
+        object.classList.remove('empty')
+        object.classList.add('entered')
+    } else {
+        object.classList.add('empty')
+        object.classList.remove('entered')
+    }
+})
+
+
+
+function setFill(event) {
+    let inside = event.target
+
+    console.log(inside.value)
+    // console.log(event.target)
+
+    if(inside.value != "") {
+        object.classList.remove('empty')
+        object.classList.add('entered')
+    } else {
+        object.classList.add('empty')
+        object.classList.remove('entered')
+    }
+}
+
+
+let object = document.getElementById('name')
+object.addEventListener('input', setFill)
+
+
+function addBorder () {
+    object1.classList.remove('entered')
+    object1.classList.add('empty')
+
+    object2.classList.remove('entered')
+    object2.classList.add('empty')
+
+    object3.classList.remove('entered')
+    object3.classList.add('empty')
+
+    object4.classList.remove('entered')
+    object4.classList.add('empty')
+}
+
+document.getElementById('addBorder').addEventListener('click', addBorder)

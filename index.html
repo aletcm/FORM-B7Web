@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- responsiveness setting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- HTML code requests external files with CSS code -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div id="showLoading" class="show">
+            <div id="loading"></div>
+        </div>
+        
+        <div id="backFrame">
+            <h2 id="contact">Entre em contato</h2>
+
+            <h2 id="success">Formulário enviado com sucesso!</h2>
+            <form action="" method="post" id="formStruct">
+                <div id="firstLine">
+                    <div class="columnLine">
+                        <label>Nome:</label>
+                        <input
+                            type="text"
+                            name="Name"
+                            title="Nome completo"
+                            placeholder="Digite seu nome completo"
+                            autofocus
+                            id="name"
+                            class="empty"
+                        >
+                    </div>
+
+                    <div class="columnLine">
+                        <label><i>E-mail:</i></label>
+                        <input
+                            type="text"
+                            name="Email"
+                            title="nome@domínio.extensão.opcional"
+                            placeholder="Digite seu e-mail"
+                            id="email"
+                            class="empty"
+                        >
+                    </div>
+                </div>
+
+                <div id="secondLine">
+                    <label>Endereço:</label>
+                    <input
+                        type="text"
+                        name="Address"
+                        title="Endereço"
+                        placeholder="Digite seu endereço"
+                        id="address"
+                        class="empty"
+                    >
+                </div>
+
+                <div id="thrirdLine">
+                    <label>Mensagem:</label>
+                    <textarea
+                        name="Message"
+                        title="Mensagem"
+                        placeholder="Digite sua mensagem"
+                        id="message"
+                        class="empty"
+                    ></textarea>
+                </div>
+
+                <div id="toSend">
+                    <button type="reset" id="clearForm" title="Limpar formulário">Limpar</button>
+
+                    <button type="submit" title="Validar e enviar formulário">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="bellow">
+            Desafio da B7Web: página <strong>"Formulário"</strong>; por Alessandro Taddei.
+        </div>
+        <!-- HTML code requests external files with JavaScript code -->
+        <script src="assets/js/filled.js"></script>
+        <script src="assets/js/valida.js"></script>
+    </body>
+</html>
